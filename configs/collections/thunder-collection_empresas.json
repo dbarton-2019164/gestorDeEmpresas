@@ -1,30 +1,73 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresas",
-    "dateExported": "2024-03-01T04:24:21.754Z",
+    "dateExported": "2024-03-01T17:10:13.209Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "b6dae8d1-0ecf-4a98-8aa8-d8103fd16743",
-            "colId": "1a31d830-8c84-48fd-a6f1-4253faf379f4",
+            "_id": "39a10ec6-0882-479a-8c4c-e98ece513a06",
+            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
             "containerId": "",
             "name": "empresasPOST",
             "url": "http://localhost:8080/businessManagement/v1/business",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-01T03:44:27.666Z",
-            "modified": "2024-03-01T04:24:01.682Z",
+            "created": "2024-03-01T13:20:16.364Z",
+            "modified": "2024-03-01T16:56:01.451Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjY2ODZkYjViNzVjMDM1ZTExMDEiLCJpYXQiOjE3MDkyNjU0NDksImV4cCI6MTcwOTI2OTA0OX0.JCPiKHgOkTRIooxsSIooTcYZI7MHI69pSRnqdsJYsJ4"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Microsoft\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 50,\n  \"category\": \"IT\"\n}",
+                "raw": "{\n  \"name\": \"123\",\n  \"impactLevel\": \"Medio\",\n  \"yearsOfExperience\": 10,\n  \"category\": \"Energía\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a4c2b480-405f-45e7-a209-c0d9de13f1d9",
+            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "containerId": "",
+            "name": "empresasGET",
+            "url": "http://localhost:8080/businessManagement/v1/business/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-01T14:27:00.355Z",
+            "modified": "2024-03-01T17:09:32.924Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b693bb5e-de34-4569-9f79-3835f17b384e",
+            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "containerId": "",
+            "name": "empresasPUT",
+            "url": "http://localhost:8080/businessManagement/v1/business/65e1e66078260423c1d4b554",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T16:32:39.844Z",
+            "modified": "2024-03-01T17:09:52.281Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Kinalito\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 11,\n  \"category\": \"Educación\"\n}",
                 "form": []
             },
             "tests": []

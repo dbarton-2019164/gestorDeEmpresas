@@ -23,6 +23,13 @@ export async function businessExists(name = "") {
   }
 }
 
+export async function businessExistsID(id = "") {
+  const business = await businessModel.findById(id);
+  if (!business) {
+    throw new Error(`The busissnes does not exist`);
+  }
+}
+
 export async function impactLevelExists(impactLevel = "") {
   if (
     impactLevel !== "Alto" &&
