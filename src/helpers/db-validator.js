@@ -1,9 +1,10 @@
 import adminModel from "../admin/admin.model.js";
 
-export const emailExists = async (email = "") => {
-    const emailExists = await adminModel.findOne({email: emailExists});
-    if(emailExists){
-        throw new Error(`The email ${email} already exists`);
-    }
-}
 
+
+export async function emailExists(correo = "") {
+    const user = await adminModel.findOne({ email: correo });
+    if (user) {
+        throw new Error(`The email ${user.email} already exists`);
+    }
+  }
