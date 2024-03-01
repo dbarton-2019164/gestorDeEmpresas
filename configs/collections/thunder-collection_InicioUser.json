@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "InicioUser",
+    "dateExported": "2024-03-01T01:31:17.339Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c7f06cb4-3777-4e4e-aced-0193e5c266e6",
+            "colId": "3e33397b-061a-4597-8c5f-2955f285cdb2",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:8080/businessManagement/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T01:24:47.442Z",
+            "modified": "2024-03-01T01:25:09.106Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"diego1@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f6f93cf-451a-49e4-95a2-40f69166a781",
+            "colId": "3e33397b-061a-4597-8c5f-2955f285cdb2",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:8080/businessManagement/v1/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T01:25:27.673Z",
+            "modified": "2024-03-01T01:26:02.784Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\" : \"Diego\",\n  \"email\": \"diego1@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 import { response, request } from "express";
 import bcryptjs from 'bcryptjs';
-
+import { generateJWT } from "../helpers/generate-jwt.js"
 import adminModel from "./admin.model.js";
 
 
@@ -20,4 +20,21 @@ export const registerUser = async (req, res) => {
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
+  };
+
+  
+
+  
+export const loginUsers = async (req, res) => {
+    const { email, password } = req.body;
+    const user = await adminModel.findOne({ email: email });
+    const acces = bcryptjs.compareSync(password, user.password);
+    if (!acces) {
+      return res.status(400).json({ msg: "Incorrect password" });
+    }
+    const token = await generateJWT(user.id);
+    res.status(200).json({
+      msg: "Acceso concedido",
+      token, 
+    });
   };
