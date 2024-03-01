@@ -1,3 +1,4 @@
+import ExcelJS from "exceljs";
 import { response } from "express";
 import businessModel from "./business.model.js";
 
@@ -103,4 +104,46 @@ export const businessPUT = async (req, res) => {
   res.status(200).json({
     msg: "The business was updated",
   });
+};
+
+export const businessReportGET = async (req, res = response) => {
+  try {
+    const businesses = await businessModel.find();
+    const workbook = new ExcelJS.Workbook();
+    const worksheet = workbook.addWorksheet("Businesses");
+
+    worksheet.addRow([
+      "Name",
+      "Impact Level",
+      "Years of experience",
+      "Category",
+    ]);
+
+    businesses.forEach((business) => {
+      worksheet.addRow([
+        business.name,
+        business.impactLevel,
+        business.yearsOfExperience,
+        business.category,
+      ]);
+    });
+
+    res.setHeader(
+      "Content-Type",
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    );
+    res.setHeader(
+      "Content-Disposition",
+      'attachment; filename="negocios.xlsx"'
+    );
+
+    await workbook.xlsx.write(res);
+
+    res.end();
+  } catch (error) {
+    console.error("Error in businessReportGET:", error);
+    return res.status(500).json({
+      error: "Error",
+    });
+  }
 };

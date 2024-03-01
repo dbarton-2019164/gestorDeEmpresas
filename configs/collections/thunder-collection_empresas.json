@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresas",
-    "dateExported": "2024-03-01T17:10:13.209Z",
+    "dateExported": "2024-03-01T17:55:51.527Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -38,11 +38,30 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-03-01T14:27:00.355Z",
-            "modified": "2024-03-01T17:09:32.924Z",
+            "modified": "2024-03-01T17:39:57.050Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTQ3NjUsImV4cCI6MTcwOTMxODM2NX0.l7QzrFOo-YJLbbXNAb6e9VAvGrZBIjBQ4F8W-lyC7FE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e1c53d5b-ab21-449a-b6fb-fc8b4eecbba8",
+            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "containerId": "",
+            "name": "empresasReportGET",
+            "url": "http://localhost:8080/businessManagement/v1/report",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-01T17:38:52.791Z",
+            "modified": "2024-03-01T17:47:22.885Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTQ3NjUsImV4cCI6MTcwOTMxODM2NX0.l7QzrFOo-YJLbbXNAb6e9VAvGrZBIjBQ4F8W-lyC7FE"
                 }
             ],
             "params": [],

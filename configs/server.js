@@ -6,6 +6,8 @@ import helmet from "helmet";
 import morgan from "morgan";
 import adminRoutes from "../src/admin/admin.routes.js";
 import businessRoutes from "../src/business/business.routes.js";
+import reportRoutes from "../src/business/businessReport.routes.js";
+
 import { dbConnection } from "./mongo.js";
 class Server {
   constructor() {
@@ -13,6 +15,7 @@ class Server {
     this.port = process.env.PORT;
     this.userPath = "/businessManagement/v1/users";
     this.businessPath = "/businessManagement/v1/business";
+    this.reportPath = "/businessManagement/v1/report";
 
     this.middlewares();
     this.conectarDB();
@@ -38,6 +41,7 @@ class Server {
   routes() {
     this.app.use(this.userPath, adminRoutes);
     this.app.use(this.businessPath, businessRoutes);
+    this.app.use(this.reportPath, reportRoutes);
   }
 
   listen() {
