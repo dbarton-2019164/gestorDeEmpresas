@@ -1,12 +1,16 @@
 import mongoose from "mongoose";
 
+
+const categories = ["IT", "Servicios Financieros", "Manufactura", "Salud", "Comercio", "Educación", "Alimentos", "Construcción", "Comunicación y entretenimiento", "Energía", "Transporte", "Turismo", "Agricultura"];
+
+
 const BusinessSchema = mongoose.Schema({
     name: {
         type: String,
         required: [true, "The name is required"]
     },
     impactLevel: {
-        type: "String",
+        type: String,
         enum: ["Alto", "Medio", "Bajo"],
         required: true
     },
@@ -18,7 +22,7 @@ const BusinessSchema = mongoose.Schema({
     category: {
         type: String,
         required: [true, "The category is required"],
-        enum: ["IT", "Servicios Financieros", "Manufactura", "Salud", "Comercio", "Educación", "Alimentos", "Construcción", "Comunicación y entretenimiento", "Energía", "Transporte", "Turismo", "Agricultura"]
+        enum: categories
     },
     condition: {
         type: Boolean,
@@ -26,10 +30,10 @@ const BusinessSchema = mongoose.Schema({
     },
 });
 
-AdminSchema.methods.toJSON = function (){
-    const { __v, password, _id, ...admin} = this.toObject();
-    admin.uid = _id;
-    return admin;
+BusinessSchema.methods.toJSON = function (){
+    const { __v, _id, ...business} = this.toObject();
+    business.uid = _id;
+    return business;
 };
 
 export default mongoose.model('Business', BusinessSchema);

@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "empresas",
+    "dateExported": "2024-03-01T04:24:21.754Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b6dae8d1-0ecf-4a98-8aa8-d8103fd16743",
+            "colId": "1a31d830-8c84-48fd-a6f1-4253faf379f4",
+            "containerId": "",
+            "name": "empresasPOST",
+            "url": "http://localhost:8080/businessManagement/v1/business",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T03:44:27.666Z",
+            "modified": "2024-03-01T04:24:01.682Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjY2ODZkYjViNzVjMDM1ZTExMDEiLCJpYXQiOjE3MDkyNjU0NDksImV4cCI6MTcwOTI2OTA0OX0.JCPiKHgOkTRIooxsSIooTcYZI7MHI69pSRnqdsJYsJ4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Microsoft\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 50,\n  \"category\": \"IT\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
