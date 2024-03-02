@@ -61,7 +61,7 @@ export const businessGET = async (req, res = response) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({
-      message: "Error al obtener los negocios",
+      message: "Error getting business",
       error: error.message,
     });
   }
@@ -78,22 +78,41 @@ export const businessPUT = async (req, res) => {
     uniqueName = false;
   }
   if (uniqueName) {
-    const b = await businessModel.findOne({ name: name });
-    if (b) {
-      return res.status(400).json({
-        msg: `The name ${b.name} already exists`,
-      });
+    // Que tire el error solo si el nombre existe pero no en el que estamos editando
+    const comparisonname = await businessModel.findOne({ name: name });
+    if (comparisonname) {
+      if (comparisonname.id !== id) {
+        return res.status(400).json({
+          msg: `The name ${comparisonname.name} already exists`,
+        });
+      }
     }
+
   }
+  // No edita el nivel si no es valido
   if (!["Alto", "Medio", "Bajo"].includes(impactLevel)) {
     impactLevel = oldName.impactLevel;
   }
   if (!yearsOfExperience) {
     yearsOfExperience = oldName.yearsOfExperience;
   }
-  if (!category) {
+  // No edita la categoria si no es valida
+  if (!["IT",
+    "Servicios Financieros",
+    "Manufactura",
+    "Salud",
+    "Comercio",
+    "Educación",
+    "Alimentos",
+    "Construcción",
+    "Comunicación y entretenimiento",
+    "Energía",
+    "Transporte",
+    "Turismo",
+    "Agricultura"].includes(category)) {
     category = oldName.category;
   }
+
 
   await businessModel.findByIdAndUpdate(id, {
     name: name,

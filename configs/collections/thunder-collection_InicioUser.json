@@ -1,44 +1,44 @@
 {
     "client": "Thunder Client",
     "collectionName": "InicioUser",
-    "dateExported": "2024-03-01T17:56:54.573Z",
+    "dateExported": "2024-03-02T20:28:45.020Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "d0024885-b2d3-4eaa-97ea-200541f56807",
-            "colId": "67c6b95e-dd00-422a-a867-a7f181011e52",
+            "_id": "3ec9f437-e150-457b-98cd-4aa398b8ab36",
+            "colId": "d74bbe4b-637f-4bf9-9e52-1e0cd56ad7e3",
             "containerId": "",
             "name": "login",
             "url": "http://localhost:8080/businessManagement/v1/users",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2024-03-01T13:20:16.417Z",
-            "modified": "2024-03-01T14:28:18.530Z",
+            "created": "2024-03-02T19:47:52.476Z",
+            "modified": "2024-03-02T20:08:02.674Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"email\": \"diego1@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\" : \"password\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "a5bfff40-2e38-43af-be55-a2e038ed0e78",
-            "colId": "67c6b95e-dd00-422a-a867-a7f181011e52",
+            "_id": "df34cec5-fb9b-4e04-ab11-9d9b97ac7f37",
+            "colId": "d74bbe4b-637f-4bf9-9e52-1e0cd56ad7e3",
             "containerId": "",
             "name": "register",
             "url": "http://localhost:8080/businessManagement/v1/users",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-03-01T13:20:16.418Z",
-            "modified": "2024-03-01T13:20:16.418Z",
+            "created": "2024-03-02T19:47:52.477Z",
+            "modified": "2024-03-02T20:07:27.090Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"Diego\",\n  \"email\": \"diego1@kinal.edu.gt\",\n  \"password\" : \"1234567\"\n}",
+                "raw": "{\n  \"name\" : \"Admin\",\n  \"email\": \"admin@gmail.com\",\n  \"password\" : \"password\"\n}",
                 "form": []
             },
             "tests": []

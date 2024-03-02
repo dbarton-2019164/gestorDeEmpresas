@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "65e3875838370b895edf9aec"
+  },
+  "name": "Kinal",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 61,
+  "category": "Educación",
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e387ca38370b895edf9af2"
+  },
+  "name": "Coca-cola",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 100,
+  "category": "Alimentos",
+  "condition": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e3880b38370b895edf9af6"
+  },
+  "name": "ASEINFO",
+  "impactLevel": "Alto",
+  "yearsOfExperience": 26,
+  "category": "IT",
+  "condition": true,
+  "__v": 0
+}]

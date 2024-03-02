@@ -1,92 +1,92 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresas",
-    "dateExported": "2024-03-01T17:55:51.527Z",
+    "dateExported": "2024-03-02T20:28:38.668Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "39a10ec6-0882-479a-8c4c-e98ece513a06",
-            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "_id": "ffd548a8-2c56-41eb-b837-8470f89b2a12",
+            "colId": "f56b2cc0-50b0-49d5-94a7-c4fbe48faf8c",
             "containerId": "",
             "name": "empresasPOST",
             "url": "http://localhost:8080/businessManagement/v1/business",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-01T13:20:16.364Z",
-            "modified": "2024-03-01T16:56:01.451Z",
+            "created": "2024-03-02T19:47:52.406Z",
+            "modified": "2024-03-02T20:11:54.769Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzODZmZTM4MzcwYjg5NWVkZjlhZTciLCJpYXQiOjE3MDk0MTAwODIsImV4cCI6MTcwOTQxMzY4Mn0.qBeu7z7sSAGsz93fpqiVRXNyOsCvEd2b1tpmSlcqbBU"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"123\",\n  \"impactLevel\": \"Medio\",\n  \"yearsOfExperience\": 10,\n  \"category\": \"Energía\"\n}",
+                "raw": "{\n  \"name\": \"ASEINFO\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 26,\n  \"category\": \"IT\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "a4c2b480-405f-45e7-a209-c0d9de13f1d9",
-            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "_id": "ac4b3fb0-a3d7-4d5b-ba6f-ab47f4b6d011",
+            "colId": "f56b2cc0-50b0-49d5-94a7-c4fbe48faf8c",
             "containerId": "",
             "name": "empresasGET",
-            "url": "http://localhost:8080/businessManagement/v1/business/2",
+            "url": "http://localhost:8080/businessManagement/v1/business/4",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-01T14:27:00.355Z",
-            "modified": "2024-03-01T17:39:57.050Z",
+            "created": "2024-03-02T19:47:52.408Z",
+            "modified": "2024-03-02T20:17:48.361Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTQ3NjUsImV4cCI6MTcwOTMxODM2NX0.l7QzrFOo-YJLbbXNAb6e9VAvGrZBIjBQ4F8W-lyC7FE"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjY2ODZkYjViNzVjMDM1ZTExMDEiLCJpYXQiOjE3MDk0MDg5NDIsImV4cCI6MTcwOTQxMjU0Mn0.DGpuC7A3Ziitt-roA4x-MSn4FD8d19xolhUKQcFgwYY"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "e1c53d5b-ab21-449a-b6fb-fc8b4eecbba8",
-            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "_id": "ec96a172-eb1a-4a3c-b3ea-66ddfdeda569",
+            "colId": "f56b2cc0-50b0-49d5-94a7-c4fbe48faf8c",
             "containerId": "",
             "name": "empresasReportGET",
             "url": "http://localhost:8080/businessManagement/v1/report",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-03-01T17:38:52.791Z",
-            "modified": "2024-03-01T17:47:22.885Z",
+            "created": "2024-03-02T19:47:52.410Z",
+            "modified": "2024-03-02T19:49:37.682Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTQ3NjUsImV4cCI6MTcwOTMxODM2NX0.l7QzrFOo-YJLbbXNAb6e9VAvGrZBIjBQ4F8W-lyC7FE"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjY2ODZkYjViNzVjMDM1ZTExMDEiLCJpYXQiOjE3MDk0MDg5NDIsImV4cCI6MTcwOTQxMjU0Mn0.DGpuC7A3Ziitt-roA4x-MSn4FD8d19xolhUKQcFgwYY"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "b693bb5e-de34-4569-9f79-3835f17b384e",
-            "colId": "e82ca564-6fda-4d34-8d34-a5e8f33a5fe2",
+            "_id": "92f99c49-6cbc-4bff-8629-4ba159eca578",
+            "colId": "f56b2cc0-50b0-49d5-94a7-c4fbe48faf8c",
             "containerId": "",
             "name": "empresasPUT",
-            "url": "http://localhost:8080/businessManagement/v1/business/65e1e66078260423c1d4b554",
+            "url": "http://localhost:8080/businessManagement/v1/business/65e387ca38370b895edf9af2",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-03-01T16:32:39.844Z",
-            "modified": "2024-03-01T17:09:52.281Z",
+            "created": "2024-03-02T19:47:52.409Z",
+            "modified": "2024-03-02T20:18:26.833Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZDc3YTE1NDcxZDJjNzNkZWI2MDkiLCJpYXQiOjE3MDkzMTA5NTIsImV4cCI6MTcwOTMxNDU1Mn0.sSpSYVNjcz6rRcB0pw6J53qEOe2FXVwrJftnNrIEIvA"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjY2ODZkYjViNzVjMDM1ZTExMDEiLCJpYXQiOjE3MDk0MDg5NDIsImV4cCI6MTcwOTQxMjU0Mn0.DGpuC7A3Ziitt-roA4x-MSn4FD8d19xolhUKQcFgwYY"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\" : \"Kinalito\",\n  \"impactLevel\": \"Alto\",\n  \"yearsOfExperience\": 11,\n  \"category\": \"Educación\"\n}",
+                "raw": "{\n  \"name\" : \"Coca cola :D\",\n  \"impactLevel\": \"Medio\",\n  \"yearsOfExperience\": 105,\n  \"category\": \"Alimentos\"\n}",
                 "form": []
             },
             "tests": []
